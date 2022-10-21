@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { CharactersContext } from "../../context/CharacterContext";
+import { useCharactersContext } from '../../hooks/useCharactersContext';
 import Picture from '../Picture';
 
 const ListPicture = () => {
-  const { characters } = useContext(CharactersContext);
+
+  const {characters} = useCharactersContext()
 
   return (
     <section>

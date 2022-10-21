@@ -9,6 +9,8 @@ interface CharacterProps {
   gender: string;
 }
 
+ export const WithMyComponent = (CharacterList);
+
 function CharacterList({ rickandmortyData }: any) {
   return (
     <section>
@@ -29,4 +31,4 @@ function CharacterList({ rickandmortyData }: any) {
   );
 }
 
-export default Hoc(CharacterList);
+export default CharacterList;

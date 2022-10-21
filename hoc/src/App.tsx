@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import "./App.css";
-import CharacterList from "./components/CharacterList";
+import CharacterList, { WithMyComponent } from "./components/CharacterList";
 import Input from "./components/Input";
 import { Character } from "./interface/character";
 
@@ -35,7 +35,8 @@ const App = () => {
 	return (
 		<>
 			<Input handleSubmit={handleSubmit} handleChange={handleChange} />
-			<CharacterList rickandmortyData={rickandmortyData} />
+			<WithMyComponent rickandmortyData={rickandmortyData} />
+			{/* <CharacterList rickandmortyData={rickandmortyData} /> */}
 		</>
 	);
 };
